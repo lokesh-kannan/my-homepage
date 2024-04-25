@@ -1,0 +1,43 @@
+<div id="container">
+    <div class="container-fluid">
+        <form>
+            <div class="row mb-4">
+                <div class="col-lg-11">
+                    <h2 class="text-center mt-3">REGISTERATION FORM:</h2>
+                </div>
+                <div class="col-lg-1">
+                    <button type="button" class="btn btn-secondary mt-3">Home</button>
+                </div>
+            </div>
+            <app-register-form-input registerInpLabel1="Name" registerInpLabel2="Science"></app-register-form-input>
+            <app-register-form-input registerInpLabel1="Mobile" registerInpLabel2="Maths"></app-register-form-input>
+            <app-register-form-input registerInpLabel1="Date of birth"
+                registerInpLabel2="Social"></app-register-form-input>
+            <app-register-form-input registerInpLabel1="Age" registerInpLabel2="English"></app-register-form-input>
+            <app-register-form-input registerInpLabel1="Address" registerInpLabel2="Tamil"></app-register-form-input>
+            <!-- <app-fetch-form-input fetchInpLeft="col-6" inputClass="col-sm-9" labelClass="col-sm-3" formLabel="District"></app-fetch-form-input> -->
+            <div class="dropdown" data-bs-theme="light">
+                <label class="col-sm-2 col-form-label">District:</label>
+                <button class="btn btn-secondary dropdown-toggle col-sm-3" type="button" id="dropdownMenuButtonLight"
+                    data-bs-toggle="dropdown" aria-expanded="false" inputClass="col-sm-9">
+                    District
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
+                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <app-fetch-form-input fetchInpLeft="col-6" inputClass="col-sm-9" labelClass="col-sm-3"
+                formLabel="Taluk"></app-fetch-form-input>
+            <app-fetch-form-input fetchInpLeft="col-6" inputClass="col-sm-9" labelClass="col-sm-3"
+                formLabel="Village"></app-fetch-form-input>
+            <div class="button">
+                <button type="submit"
+                    class="btn btn-secondary bg-secondary-subtle border border-secondary-subtle rounded-5"
+                    (click)="submit()">submit</button>
+            </div>
+        </form>
+    </div>
+</div>
